@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#
+# variables from arguments string in jdl
+#
+
+
+INPUTFILE=$1
+OUTPUTFILE=$2
+WEIGHT=$3
+
+echo ""
+echo "parameter set:"
+echo "INPUTFILE:   $INPUTFILE"
+echo "OUTPUTFILE:  $OUTPUTFILE"
+echo "WEIGHT:     $WEIGHT"
+
+cmsrel CMSSW_7_4_6_patch6
+cd CMSSW_7_4_6_patch6/src/
+eval `scramv1 runtime -sh`
+
+#run macro
+echo "run: root -b -q -l 'MasterReaderAdvanced.C+("$INPUTFILE","$OUTPUTFILE","$WEIGHT")' 2>&1"
+root -b -q -l 'MasterReaderAdvanced.C+("'$INPUTFILE'","'$OUTPUTFILE'","'$WEIGHT'")' 

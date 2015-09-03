@@ -1,0 +1,27 @@
+
+
+
+ReadUsingXrootrd="yes"
+XrootPath="root://cmsxrootd.fnal.gov"
+####    path of samples #####
+path="/eos/uscms/store/user/lpcsusyhad/SusyRA2Analysis2015/DPSproductionPatch1/"
+
+
+
+####    Name of samples #####
+
+
+list_mc_sig = ["Spring15.GJets_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_*_RA2AnalysisTree.root","Spring15.GJets_HT-600ToInf_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_*_RA2AnalysisTree.root"]
+
+
+list_mc_bkg = ["Spring15.QCD_Pt_80to120_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root","Spring15.QCD_Pt_120to170_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root","Spring15.QCD_Pt_170to300_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root","Spring15.QCD_Pt_300to470_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root","Spring15.QCD_Pt_470to600_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root","Spring15.QCD_Pt_600to800_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root","Spring15.QCD_Pt_800to1000_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root","Spring15.QCD_Pt_1000to1400_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root","Spring15.QCD_Pt_1400to1800_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root","Spring15.QCD_Pt_1800to2400_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root","Spring15.QCD_Pt_2400to3200_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root","Spring15.QCD_Pt_3200toInf_TuneCUETP8M1_13TeV_pythia8_*_RA2AnalysisTree.root"]
+
+
+list_mc_sig_weights = [0.132,0.0379] #G400,G600
+
+list_mc_bkg_weights = [830.8,140.5,34.9,2.70,0.335,0.100,0.0174,0.00635,0.00431,0.000594,3.51e-5,8.84e-7] #
+
+
+list_data = [] 
+
+

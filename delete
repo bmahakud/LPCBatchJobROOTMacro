@@ -1,0 +1,8 @@
+rm *.condor
+rm *.stdout
+rm *.stderr
+rm jobExecCondor_Sig_Files_*.jdl
+rm jobExecCondor_Bkg_Files_*.jdl
+rm output_Sig_Files_*_.root
+rm output_Bkg_Files_*_.root
+

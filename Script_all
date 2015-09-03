@@ -1,0 +1,5 @@
+python FileLister.py
+chmod +x script_Filelister
+./script_Filelister
+root -l -q Create_jdl.C
+./condor_submit.sh 

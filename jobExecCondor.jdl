@@ -1,0 +1,15 @@
+universe = vanilla
+Executable = jobExecCondor.sh
+Requirements = OpSys == "LINUX" && (Arch != "DUMMY" )
+request_disk = 1000000
+request_memory = 199
+Should_Transfer_Files = YES
+WhenToTransferOutput = ON_EXIT
+Transfer_Input_Files = jobExecCondor.sh,MasterReaderAdvanced.C,ClassReadTree.cc,MasterReaderAdvanced_C.so
+Output = $(Cluster)_$(Process).stdout
+Error = $(Cluster)_$(Process).stderr
+Log = $(Cluster)_$(Process).condor
+notification = Never
+x509userproxy = $ENV(X509_USER_PROXY)
+Arguments = root://cmsxrootd.fnal.gov///store/user/lpcsusyhad/SusyRA2Analysis2015/DPSproductionPatch1/Spring15.GJets_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_40_RA2AnalysisTree.root SigmaIetaIeta.root 0.132 
+Queue 1
